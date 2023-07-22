@@ -9,5 +9,5 @@ export async function GET() {
 //   })
 
  
-  return NextResponse.json( "hello word" )
+  return NextResponse.json( {data:"hello"} )
 }
