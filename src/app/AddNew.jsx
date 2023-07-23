@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 
-export default function () {
+export default function AddNew() {
 
     const [visible, setVisible] = useState()
     const [data, setData] = useState({
