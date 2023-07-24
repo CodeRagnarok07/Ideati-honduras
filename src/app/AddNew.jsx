@@ -22,18 +22,19 @@ export default function AddNew() {
 
     const handleSubmit = async (e) => {
         e.preventDefault()
-        const response = await fetch("/api/post", {
+        const response = await fetch("api/post/", { 
             method: "POST",
             body: JSON.stringify(data),
             headers: {
-                "Accept": "*/*",
-                "Content-Type": "application/json"
+             "Accept": "*/*",
+             "User-Agent": "Thunder Client (https://www.thunderclient.com)",
+             "Content-Type": "application/json"
             }
-        });
+          });
+          const res_data = await response.json()
 
-
-        console.log(response);
-        // setVisible(!visible)
+        console.log(res_data);
+        setVisible(!visible)
 
     }
 

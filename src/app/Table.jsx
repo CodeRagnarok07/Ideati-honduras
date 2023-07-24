@@ -1,7 +1,6 @@
 "use client"
 export default function Table({ data }) {
 
-    console.log(data);
     return (
         <table class="w-full text-sm text-left text-gray-400">
             <thead class="text-xs  uppercase bg-gray-700 text-gray-400">
