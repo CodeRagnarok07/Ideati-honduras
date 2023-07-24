@@ -14,16 +14,10 @@ export default async function Home() {
 
     return (
         <div className="flex justify-center  h-full">
-
-
-
             <div class="mt-10 p-6 transparent border border-gray-200 rounded-lg shadow bg-gray-800 h-min">
-
                 <AddNew />
                 <Table data={data} />
-
             </div>
-
         </div>
     )
 }
