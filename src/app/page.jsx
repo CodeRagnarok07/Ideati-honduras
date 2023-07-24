@@ -1,16 +1,16 @@
 import AddNew from "./AddNew"
 import Table from "./Table"
 
-// const api = process.env.NEXT_PUBLIC_API_GET
-// const getData = () => {
-//     return fetch(api).then(res => res.json())
-// }
-
-
-const getData = async() => {
-    const res = await import("./api/get/route")
-    return await (await res.GET()).json();
+const api = process.env.NEXT_PUBLIC_API_GET
+const getData = () => {
+    return fetch(api).then(res => res.json())
 }
+
+
+// const getData = async() => {
+//     const res = await import("./api/get/route")
+//     return await (await res.GET()).json();
+// }
 
 export default async function Home() {
 
